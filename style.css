@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #4daf54, #3d8880);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 400px;
+  background: #272d40;
+  width: 320px;
+  border-radius: 15px;
+}
+.header {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+.header img {
+  height: 180px;
+
+  margin: 50px 0 0 -45px;
+  transition: 0.5s;
+}
+
+.header i {
+  font-size: 28px;
+  color: white;
+}
+.header i:not(:last-child) {
+  margin: 20px 0 0 20px;
+}
+.header i:not(:first-child) {
+  margin: 20px 0 20px 0px;
+}
+.name {
+  color: #4daf54;
+  text-align: center;
+
+  transition: 0.5s;
+}
+.price {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.box:hover .header img {
+  transform: translateY(-100px) rotate(-30deg);
+}
+.box:hover .name {
+  transform: translateX(-40px) translateY(-70px);
+}
+.box:hover .price {
+  transform: translateX(-120px) translateY(-70px);
+}
+.leftover {
+  margin-top: -40px;
+  margin-left: 20px;
+  transform: translateY(130px);
+ 
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  
+}
+.box:hover .leftover{
+   
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-2px);
+}
+.size,
+.color {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.size h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.size-num {
+  background: #dadada;
+
+  margin-right: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.size6 {
+  margin-left: 20px;
+}
+
+.color h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.green,
+.red,
+.black {
+  height: 15px;
+  width: 15px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.green {
+  background: #4daf54;
+}
+.red {
+  background: red;
+}
+.black {
+  background: black;
+}
+.btn {
+}
+button {
+  color: white;
+  border: none;
+  outline: none;
+  background: #4daf54;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.color,
+.btn {
+  margin-top: 20px;
+}
+.buy:hover,
+.cart:hover {
+  background: #3a813f;
+}
+
